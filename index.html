@@ -5,11 +5,12 @@
 
 <script>
  function callAndroid(){
-
-    closer.close();
+	console.log('before calling closer');
+	closer.close();
+	console.log('after calling closer');
  }
  
- callAndroid();
+ setTimeout(callAndroid, 2000);
 </script>
 
 <button onclick="callAndroid()">Click me to close</button>
